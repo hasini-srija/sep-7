@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+  int *p;
+  int n,i,sum=0;
+  printf("enter n value");
+  scanf("%d",&n);
+  p=int*malloc(n*sizeof(int));
+  for(i=0;i<n;i++)
+  {
+    scanf("%d",p+i);
+    sum=sum+*(p+i);
+  }
+  printf("%d",sum);
+  return 0;
+}
+   
